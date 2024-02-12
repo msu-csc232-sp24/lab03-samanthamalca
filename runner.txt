@@ -1,0 +1,101 @@
+UpdateCTestConfiguration  from :/home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug/DartConfiguration.tcl
+Parse Config file:/home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug/DartConfiguration.tcl
+Parse Config file:/home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug/DartConfiguration.tcl
+Test project /home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: Scenario: Evaluate Code for Task 1: The Dog interface exists
+
+1: Test command: /home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug/tests "Scenario: Evaluate Code for Task 1: The Dog interface exists"
+1: Test timeout computed to be: 1500
+1: Filters: "Scenario: Evaluate Code for Task 1: The Dog interface exists"
+1: Randomness seeded to: 1495483881
+1: ===============================================================================
+1: All tests passed (2 assertions in 1 test case)
+1: 
+1/3 Test #1: Scenario: Evaluate Code for Task 1: The Dog interface exists ....   Passed    0.00 sec
+test 2
+    Start 2: Scenario: Evaluate Code for Task 2: Dog Implementations exist
+
+2: Test command: /home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug/tests "Scenario: Evaluate Code for Task 2: Dog Implementations exist"
+2: Test timeout computed to be: 1500
+2: Filters: "Scenario: Evaluate Code for Task 2: Dog Implementations exist"
+2: Randomness seeded to: 414146427
+2: 
+2: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2: tests is a Catch2 v3.4.0 host application.
+2: Run with -? for options
+2: 
+2: -------------------------------------------------------------------------------
+2: Scenario: Evaluate Code for Task 2: Dog Implementations exist
+2:       Given: A a collection of Dog pointers
+2:        When: I as a Yorkie to sit
+2:        Then: I expect the Yorkie has been shown to be seated
+2: -------------------------------------------------------------------------------
+2: ../src/test/cpp/unit_tests.cpp:150
+2: ...............................................................................
+2: 
+2: ../src/test/cpp/unit_tests.cpp:155: FAILED:
+2:   REQUIRE( ends_with )
+2: with expansion:
+2:   false
+2: 
+2: -------------------------------------------------------------------------------
+2: Scenario: Evaluate Code for Task 2: Dog Implementations exist
+2:       Given: A a collection of Dog pointers
+2:        When: I as the first GreatDaehn to sit
+2:        Then: I expect the first GreatDaehn has been shown to be seated
+2: -------------------------------------------------------------------------------
+2: ../src/test/cpp/unit_tests.cpp:164
+2: ...............................................................................
+2: 
+2: ../src/test/cpp/unit_tests.cpp:169: FAILED:
+2:   REQUIRE( ends_with )
+2: with expansion:
+2:   false
+2: 
+2: -------------------------------------------------------------------------------
+2: Scenario: Evaluate Code for Task 2: Dog Implementations exist
+2:       Given: A a collection of Dog pointers
+2:        When: I as the second GreatDaehn to sit
+2:        Then: I expect the second GreatDaehn has been shown to be seated
+2: -------------------------------------------------------------------------------
+2: ../src/test/cpp/unit_tests.cpp:178
+2: ...............................................................................
+2: 
+2: ../src/test/cpp/unit_tests.cpp:183: FAILED:
+2:   REQUIRE( ends_with )
+2: with expansion:
+2:   false
+2: 
+2: ===============================================================================
+2: test cases: 1 | 1 failed
+2: assertions: 5 | 2 passed | 3 failed
+2: 
+2/3 Test #2: Scenario: Evaluate Code for Task 2: Dog Implementations exist ...***Exception: SegFault  0.09 sec
+test 3
+    Start 3: Scenario: Evaluate Code for Task 3: Demonstrate Polymorphism
+
+3: Test command: /home/ayesha/projects/CSC232/scripts/lab03-samanthamalca/cmake-build-debug/tests "Scenario: Evaluate Code for Task 3: Demonstrate Polymorphism"
+3: Test timeout computed to be: 1500
+3: Filters: "Scenario: Evaluate Code for Task 3: Demonstrate Polymorphism"
+3: Randomness seeded to: 1103327701
+3: A Yorkie named snickerswas just created.
+3: A greatDaehn named sugarwas just created.
+3: ===============================================================================
+3: All tests passed (1 assertion in 1 test case)
+3: 
+3/3 Test #3: Scenario: Evaluate Code for Task 3: Demonstrate Polymorphism ....   Passed    0.00 sec
+
+67% tests passed, 1 tests failed out of 3
+
+Total Test time (real) =   0.10 sec
+
+The following tests FAILED:
+	  2 - Scenario: Evaluate Code for Task 2: Dog Implementations exist (SEGFAULT)
